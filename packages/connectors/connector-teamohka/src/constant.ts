@@ -17,7 +17,7 @@ export const defaultMetadata: ConnectorMetadata = {
     ko: 'Ohkaspace',
   },
   logo: './logo.svg',
-  logoDark: './logo-dark.svg',
+  logoDark: './logo.svg',
   description: {
     en: 'Custom login for the PHPBB-based forum.',
   },

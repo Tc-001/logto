@@ -18,6 +18,7 @@ import { authorizationCallbackErrorGuard, githubConfigGuard, authResponseGuard }
 
 type User = {
   name: string;
+  email: string;
   forum: string;
   host: string;
   ip: string;
@@ -90,6 +91,8 @@ const getUserInfo =
       return {
         id: payload.forum,
         name: payload.name,
+        email: payload.forum + '@forum.ohkaspace.com',
+        username: payload.forum,
       };
     } catch (error: unknown) {
       console.error(error);
